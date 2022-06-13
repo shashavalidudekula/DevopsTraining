@@ -12,6 +12,6 @@ if [ $disk -lt 85 ]
 then
         echo "the current disk usage is at: $disk %"
 else
-        echo "disk usage is above 30%"
+        echo "disk usage is above 85%"
  #    mail -s "URGENT: Disk Threshold meets 85%" abc@xyz.com
 fi
