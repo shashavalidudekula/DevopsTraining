@@ -14,9 +14,9 @@ echo
 echo "Enter a Date (e.g 3): "
 read date
 echo
-if [ $date -lt 10 ]
+if [ $date -lt 10 ]   # if the date is lessthan 10
 then
-	date=" $date"
+	date=" $date"    #if date is lessthan 10 adds a space before date. it will help in matching the pattern in grep command.
 fi
 
 
