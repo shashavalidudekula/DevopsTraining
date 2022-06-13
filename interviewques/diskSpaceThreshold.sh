@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #Purpose: Bash Scripting Training
 #Author : Shashavali
@@ -7,11 +8,25 @@
 echo "Reading Disk usage of root "
 sleep 1
 echo
-disk=`df | grep -i "/dev/xvda2" | awk '{print $5}' | cut -d % -f 1`      #/dev/xvda2 changes according to respective systems.
+disk=`df | grep -i "/dev/xvda2" | awk '{print $5}' | cut -d % -f 1`    #/dev/xvda2 changes according to respective systems.
 if [ $disk -lt 85 ]
 then
         echo "the current disk usage is at: $disk %"
 else
-        echo "disk usage is above 85%"
- #    mail -s "URGENT: Disk Threshold meets 85%" abc@xyz.com
+        echo "Disk usage is above 85%"
+        echo
+        echo "Sending an email to admin"
+        echo
+        sleep 1
+        echo "..."
+        sleep 1
+        echo "..."
+        sleep 1
+        echo "disk usage is above 85%" | mail -s "URGENT: Disk Threshold meets 85%" shasha@ip-172-31-1-18.ap-south-1.compute.internal    #email id changes 
+        if [ $? -eq 0 ]
+        then
+                echo "Mail sent successfully"
+        else
+                echo "unable to send mail"
+        fi
 fi
