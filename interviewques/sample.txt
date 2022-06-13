@@ -1,0 +1,7 @@
+This is a sample file containing words Failure and Success
+This line has a single Failure word
+this line has two occurances.one here Failure and another one here Failure
+Failure is a stepping stone of S0uccess
+If Failure the Failure , the Failure Fails you, I am not Failure i am the Success.
+Jai Balayya
+
