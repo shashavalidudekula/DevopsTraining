@@ -6,7 +6,7 @@
 
 read -p "Enter a file name: " file
 echo
-touch $file
+touch $file    #this will create a file with given name.
 if [ $? -eq 0 ]
 then
 	echo "The file with name $file has been successfully created"
