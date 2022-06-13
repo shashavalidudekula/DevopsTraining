@@ -4,7 +4,7 @@
 #Date: 13th June,2022
 #Use: creates a backup of shellscripts dir in root home dir
 
-tar -cvf /tmp/backup.tar /home/shasha/shellscripts                          #tar the files you want to backup
+tar -cvf /tmp/backup.tar /home/shasha/shellscripts                          #tar the files you want to backup.. you can create backup wherever you want
 gzip /tmp/backup.tar                                                        #compress the tar again to save space
 if [ $? -eq 0 ]
 then
