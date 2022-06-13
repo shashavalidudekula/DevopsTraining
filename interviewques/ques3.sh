@@ -7,7 +7,7 @@
 echo
 read -p "Enter a file name: " file
 echo
-[ -f $file ] && cat $file || echo "file $file doesn't exist"
+[ -f $file ] && cat $file || echo "file $file doesn't exist"     #checks file, if file exists printe file contents or display file doesn't exist
 echo
 
 
