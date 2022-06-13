@@ -5,7 +5,7 @@
 #use: Script for checking given users are present or not
 
 echo
-for i in $@                #passing command line args to for loog using $@
+for i in $@                #passing command line args to for loop using $@
 do
         grep -i $i /etc/passwd > /dev/null    #check users are present in /etc/passwd (users file) and curbing the output to null.
         if [ $? -eq 0 ]
