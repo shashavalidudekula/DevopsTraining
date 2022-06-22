@@ -22,7 +22,7 @@ else
         sleep 1
         echo "..."
         sleep 1
-        echo "disk usage is above 85%" | mail -s "URGENT: Disk Threshold meets 85%" shasha@ip-172-31-1-18.ap-south-1.compute.internal    #email id changes 
+        echo "disk usage is above 85%" | mail -s "URGENT: Disk Threshold meets 85%" admin@example.com    #email id changes 
         if [ $? -eq 0 ]
         then
                 echo "Mail sent successfully"

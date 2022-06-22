@@ -1,3 +1,6 @@
-# ShellScripting
-Hi all, Here are some shellscripts I created. 
-Please go through these.. and let me know how can i improve these...
+# Devops Training
+Hi all,
+Here i post everything i am learning in Devops.
+This will be a collection of example scripts, cheatsheets and few realtime examples.
+will try to add installation procedures, errors and resolutions.
+
