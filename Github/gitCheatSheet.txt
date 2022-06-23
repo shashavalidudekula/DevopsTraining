@@ -21,7 +21,7 @@ GitHub is a web-based Git repository hosting service, which offers all of the di
     Git competes with CVS, Azure DevOps Server, Subversion, Mercurial, etc.	                GitHub competes with GitLab, Git Bucket, AWS Code Commit, etc.
     
     
-<h1> Git Commands : </h1>
+Git Commands:
  
  To initiate a git 
     git init
