@@ -8,7 +8,7 @@
 
 `cd /etc`	 Change to the /etc directory
 
-sudo su - changes to the root user
+ sudo su - changes to the root user
 
 ## File and Directory Commands
 
