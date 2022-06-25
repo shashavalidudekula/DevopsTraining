@@ -46,6 +46,55 @@
 
 `tail -f file`	 Display the last 10 lines of file and "follow" the file as it grows.
 
+## File Permissions
+
+`chown`  change the owner of a file ex --> chown bob hello.txt
+
+`chown user:bob report.txt`  changes the user owning report.txt to 'user' and the group owning it to 'bob' `-R` recursively affect all the sub folders ex --> `chown -R bob:bob /home/Daniel`
+
+`chmod` modify user access/permission
+
+`chmod u+w testfile.txt`  Gives **Write** permission to _user_ for testfile.txt
+
+`chmod g+r testfile.txt` Gives **Read** permission to _group_ for testfile.txt
+
+`chmod o+x testfile.txt` Gives **Execute** permission to _others_ for testfile.txt
+ 
+ u = user       g = group      o = other
+
+r = read (read permissions)          w = write (write permissions)    x = eXecute (only useful for scripts and programs)
+
+'+' means add a right           '-' means delete a right         '=' means affect a right
+
+
+d = directory (if element is a directory) 
+
+l = link (if element is a file link)
+
+## User Information and Management
+
+`id` Display the user and group ids of your current user.
+
+`last`	 Display the last users who have logged onto the system.
+
+`who`	 Show who is logged into the system.
+
+`w`	# Show who is logged in and what they are doing.
+
+`groupadd test`	 Create a group named "test".
+
+`useradd -c "John Smith" -m john`	 Create an account named john, with a comment of "John Smith" and create the user's home directory.
+
+`userdel john` Delete the john account.
+
+`lid username` Shows the names of the groups which are given user is a part of
+
+`lid -g groupname` shows the members of the given group
+
+`usermod -aG sales john`	 Add the john account to the sales group
+
+`usermod -g newgroup username` changes the default group of the user to new group
+
 ## System Information Commands
 
   `uname -a`  Display Linux system information
@@ -115,31 +164,6 @@
 `lsof -u user`	List files opened by user
  
 `watch df -h`	 Execute "df -h", showing periodic updates
-
-## User Information and Management
-
-`id` Display the user and group ids of your current user.
-
-`last`	 Display the last users who have logged onto the system.
-
-`who`	 Show who is logged into the system.
-
-`w`	# Show who is logged in and what they are doing.
-
-`groupadd test`	 Create a group named "test".
-
-`useradd -c "John Smith" -m john`	 Create an account named john, with a comment of "John Smith" and create the user's home directory.
-
-`userdel john` Delete the john account.
-
-`lid username` Shows the names of the groups which are given user is a part of
-
-`lid -g groupname` shows the members of the given group
-
-`usermod -aG sales john`	 Add the john account to the sales group
-
-`usermod -g newgroup username` changes the default group of the user to new group
-
 
 ## Process Management
 
