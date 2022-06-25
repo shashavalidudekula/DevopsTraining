@@ -8,7 +8,7 @@
 
 `cd /etc`	 Change to the /etc directory
 
- sudo su - changes to the root user
+`sudo su -` changes to the root user. Here `-` indicates change the pwd to root users to home dir. 
 
 ## File and Directory Commands
 
@@ -16,16 +16,17 @@
 
 `ls -li`  list the files in a present working directlry (pwd) along with the inode information
 
-'ls -ltr` list the files in a present working directlry (pwd) as per the access time in the reverse oder
+`ls -ltr` list the files in a present working directlry (pwd) as per the access time in the reverse oder
 
-'ls -lt | head -5` list the top 5 files as per the access time in a present working directlry (pwd)
+`ls -lt | head -5` list the top 5 files as per the access time in a present working directlry (pwd)
 
 `pwd`	Display the present working directory
 
 `touch filename` Creates an empty file with given filename
 
 `mkdir directory`	 Create a directory
-'mkdir -p directory1/directory` - creates a parent directlry if doesn't exists already
+
+`mkdir -p directory1/directory` - creates a parent directlry if doesn't exists already
 
 `rmdir directory` Removes empty directories only
 
