@@ -158,16 +158,18 @@ l = link (if element is a file link)
 
 `yum remove package`	 Remove/uninstall package.
 
+
+install software from sourcode.
 <pre>tar zxvf sourcecode.tar.gz
 cd sourcecode
 ./configure make
-make install </pre>    install software from sourcode.     
+make install </pre>         
 
-####use below commands for installing packages under ubuntu os
+#### Use below commands for installing packages under ubuntu os
 
-`apt-get install package` install package
+`apt-get install package` Install package
 
-`apt-get remove package` remove package
+`apt-get remove package` Remove package
 
 ## Search
 
