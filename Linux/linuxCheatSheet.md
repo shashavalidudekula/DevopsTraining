@@ -8,7 +8,7 @@
 
 `cd /etc`	 Change to the /etc directory
 
-`sudo su -` changes to the root user. Here `-` indicates change the pwd to root users to home dir. 
+`sudo su -` changes to the root user. Here `-` indicates change the pwd to root users home dir. 
 
 ## File and Directory Commands
 
