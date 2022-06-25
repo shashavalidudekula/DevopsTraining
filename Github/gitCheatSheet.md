@@ -26,7 +26,24 @@ GitHub is a web-based Git repository hosting service, which offers all of the di
 | Git provides a Desktop interface named Git Gui. | GitHub provides a Desktop interface named GitHub Desktop. |
 | Git competes with CVS, Azure DevOps Server, Subversion, Mercurial, etc.	| GitHub competes with GitLab, Git Bucket, AWS Code Commit, etc. |
     
-    
+
+### Glossary: 
+
+**commit:** a Git object, a snapshot of your entire repository compressed into a SHA
+
+**branch:** a lightweight movable pointer to a commit
+
+**clone:** a local version of a repository, including all commits and branches
+
+**remote:** a common repository on GitHub that all team members use to exchange their changes
+
+**fork:** a copy of a repository on GitHub owned by a different user
+
+**pull request:** a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
+
+**HEAD:** representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using git switch
+
+
 # Git Commands:
  
 ## SETUP
