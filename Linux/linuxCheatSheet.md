@@ -252,10 +252,9 @@ l = link (if element is a file link)
 cd sourcecode
 ./configure make
 make install </pre>    install software from sourcode.     
-
-'use below commands for installing packages under ubuntu os
+`use below commands for installing packages under ubuntu os
 `apt-get install package` install package
-`apt-get remove package` remo
+`apt-get remove package` remove package
 
 ## Search
 
