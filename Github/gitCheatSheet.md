@@ -166,3 +166,8 @@ Rewriting branches, updating commits and clearing history
 
 `git revert [commit SHA]` Create a new commit, reverting changes from the specified commit. It generates an inversion of changes.
 
+
+
+
+#### References
+https://training.github.com/downloads/github-git-cheat-sheet/
