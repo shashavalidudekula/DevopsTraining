@@ -132,6 +132,77 @@ l = link (if element is a file link)
   
   `whoami`	 Who you are logged in as
 
+## Archives
+
+`tar -cf archive.tar directory`	 Create tar named archive.tar containing directory.
+
+`tar -xf archive.tar`	 Extract the contents from archive.tar. 
+
+`tar czf archive.tar.gz directory`	 Create a gzip compressed tar file name archive.tar.gz.
+ 
+`tar xzf archive.tar.gz`	 Extract a gzip compressed tar file.
+
+`tar cjf archive.tar.bz2 directory`	 Create a tar file with bzip2 compression
+
+`tar xjf archive.tar.bz2`	 Extract a bzip2 compressed tar file.
+
+## Installing Packages
+
+`yum search keyword`	Search for a package by keyword.
+
+`yum install package`	 Install package.
+
+`yum info package`	 Display description and summary information about package.
+
+`rpm -i package.rpm`	 Install package from local file named package.rpm
+
+`yum remove package`	 Remove/uninstall package.
+
+<pre>tar zxvf sourcecode.tar.gz
+cd sourcecode
+./configure make
+make install </pre>    install software from sourcode.     
+
+####use below commands for installing packages under ubuntu os
+
+`apt-get install package` install package
+
+`apt-get remove package` remove package
+
+## Search
+
+`grep pattern file`	 Search for pattern in file
+
+`grep -r pattern directory`	 Search recursively for pattern in directory locate name	# Find files and directories by name
+
+`find /home/john -name 'prefix*' `  Find files in /home/john that start with "prefix".
+
+`find /home -size +100M`	 Find files larger than 100MB in /home
+
+## File Transfers
+
+`scp file.txt server:/tmp`	 Secure copy file.txt to the /tmp folder on server
+
+`scp server:/var/www/*.html /tmp` Copy *.html files from server to the local /tmp folder.
+
+`scp -r server:/var/www /tmp`	Copy all files and directories recursively from server to the current system's /tmp folder.
+
+`rsync -a /home /backups/`	 Synchronize /home to /backups/home 
+
+`rsync -avz /home server:/backups/`  Synchronize files/directories between the local and remote system with compression enabled
+
+## Disk Usage
+
+`df -h`  Show free and used space on mounted filesystems
+
+`df -i`	 Show free and used inodes on mounted filesystems
+
+`fdisk -l`	 Display disks partitions sizes and types
+
+`du -ah`	 Display disk usage for all files and directories in human readable format
+
+`du -sh`	Display total disk usage off the current directory
+
 ## Hardware Information Commands
 
 `dmesg`	Display messages in kernel ring buffer
@@ -225,75 +296,6 @@ l = link (if element is a file link)
 `wget http://domain.com/file`	 Download http://domain.com/file
 
 `netstat -nutlp`	 Display listening tcp and udp ports and corresponding programs
-
-## Archives
-
-`tar -cf archive.tar directory`	 Create tar named archive.tar containing directory.
-
-`tar -xf archive.tar`	 Extract the contents from archive.tar. 
-
-`tar czf archive.tar.gz directory`	 Create a gzip compressed tar file name archive.tar.gz.
- 
-`tar xzf archive.tar.gz`	 Extract a gzip compressed tar file.
-
-`tar cjf archive.tar.bz2 directory`	 Create a tar file with bzip2 compression
-
-`tar xjf archive.tar.bz2`	 Extract a bzip2 compressed tar file.
-
-## Installing Packages
-
-`yum search keyword`	Search for a package by keyword.
-
-`yum install package`	 Install package.
-
-`yum info package`	 Display description and summary information about package.
-
-`rpm -i package.rpm`	 Install package from local file named package.rpm
-
- `yum remove package`	 Remove/uninstall package.
-
-<pre>tar zxvf sourcecode.tar.gz
-cd sourcecode
-./configure make
-make install </pre>    install software from sourcode.     
-`use below commands for installing packages under ubuntu os
-`apt-get install package` install package
-`apt-get remove package` remove package
-
-## Search
-
-`grep pattern file`	 Search for pattern in file
-
-`grep -r pattern directory`	 Search recursively for pattern in directory locate name	# Find files and directories by name
-
-`find /home/john -name 'prefix*' `  Find files in /home/john that start with "prefix".
-
-`find /home -size +100M`	 Find files larger than 100MB in /home
-
-## File Transfers
-
-`scp file.txt server:/tmp`	 Secure copy file.txt to the /tmp folder on server
-
-`scp server:/var/www/*.html /tmp` Copy *.html files from server to the local /tmp folder.
-
-`scp -r server:/var/www /tmp`	Copy all files and directories recursively from server to the current system's /tmp folder.
-
-`rsync -a /home /backups/`	 Synchronize /home to /backups/home 
-
-`rsync -avz /home server:/backups/`  Synchronize files/directories between the local and remote system with compression enabled
-
-## Disk Usage
-
-`df -h`  Show free and used space on mounted filesystems
-
-`df -i`	 Show free and used inodes on mounted filesystems
-
-`fdisk -l`	 Display disks partitions sizes and types
-
-`du -ah`	 Display disk usage for all files and directories in human readable format
-
-`du -sh`	Display total disk usage off the current directory
-
 
 
 
