@@ -1,10 +1,15 @@
-#### This file is about Git/Github
+## Git/Github
 
 **What is Git ?** 
+
 Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows. 
 
 **What is Github**
+
+
 GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. 
+
+### Difference between Git and GitHub
 
 
 | Git       | GitHub          |
@@ -22,9 +27,8 @@ GitHub is a web-based Git repository hosting service, which offers all of the di
 | Git competes with CVS, Azure DevOps Server, Subversion, Mercurial, etc.	| GitHub competes with GitLab, Git Bucket, AWS Code Commit, etc. |
     
     
-Git Commands:
+## Git Commands:
  
- To initiate a git 
-    git init
-   Creates an empty git directory. 
+ `git init` To initiate a git. Creates an empty git directory.
+ 
     
