@@ -106,6 +106,8 @@ l = link (if element is a file link)
 
 `usermod -g newgroup username` changes the default group of the user to new group
 
+`su username` switch to given username
+
 ## System Information Commands
 
   `uname -a`  Display Linux system information
