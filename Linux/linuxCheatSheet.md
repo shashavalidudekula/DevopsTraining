@@ -69,18 +69,19 @@
 `chmod g+r testfile.txt` Gives **Read** permission to _group_ for testfile.txt
 
 `chmod o+x testfile.txt` Gives **Execute** permission to _others_ for testfile.txt
- 
+
+<pre>
  u = user       g = group      o = other
 
 r = read (read permissions)          w = write (write permissions)    x = eXecute (only useful for scripts and programs)
 
 '+' means add a right           '-' means delete a right         '=' means affect a right
 
-
 d = directory (if element is a directory) 
 
 l = link (if element is a file link)
 
+</pre>
 ## User Information and Management
 
 `id` Display the user and group ids of your current user.
