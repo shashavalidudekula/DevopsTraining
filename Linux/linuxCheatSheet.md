@@ -299,5 +299,6 @@ make install </pre>
 
 `netstat -nutlp`	 Display listening tcp and udp ports and corresponding programs
 
+'ifconfig -a` It is used to configure the kernel-resident network interfaces. It is used at the boot time to set up the interfaces as necessary
 
 
