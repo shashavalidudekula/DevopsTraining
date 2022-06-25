@@ -8,15 +8,24 @@
 
 `cd /etc`	 Change to the /etc directory
 
+sudo su - changes to the root user
+
 ## File and Directory Commands
 
 `ls -al` List all files in a long listing (detailed) format
+
+`ls -li`  list the files in a present working directlry (pwd) along with the inode information
+
+'ls -ltr` list the files in a present working directlry (pwd) as per the access time in the reverse oder
+
+'ls -lt | head -5` list the top 5 files as per the access time in a present working directlry (pwd)
 
 `pwd`	Display the present working directory
 
 `touch filename` Creates an empty file with given filename
 
 `mkdir directory`	 Create a directory
+'mkdir -p directory1/directory` - creates a parent directlry if doesn't exists already
 
 `rmdir directory` Removes empty directories only
 
@@ -24,7 +33,7 @@
 
 `rm -r directory`	Remove the directory and its contents recursively
 
-`rm -f file` Force removal of file without prompting for confirmation
+`rm -f file` Force removal of file without prompting for confirmation and also without read permsission
 
 `rm -rf directory` Forcefully remove directory recursively
 
@@ -244,6 +253,9 @@ cd sourcecode
 ./configure make
 make install </pre>    install software from sourcode.     
 
+'use below commands for installing packages under ubuntu os
+`apt-get install package` install package
+`apt-get remove package` remo
 
 ## Search
 
