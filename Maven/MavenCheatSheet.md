@@ -1,6 +1,9 @@
-Maven Cheat Sheet
-=================
-Some useful commands and snippets for [Apache Maven](https://maven.apache.org/)
+Apache Maven
+============
+
+Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+More information can be found on [Apache Maven Homepage](https://maven.apache.org/)
 
 ### Pre-rquisites:
 
@@ -33,7 +36,7 @@ Install Maven - Redhat
 
         unzip apache-maven-3.8.6-bin.zip
      
-    *  if you don't have `unzip` installed already install it using `yum install unzip -y`
+    *  if you don't have `unzip`. Install it using `yum install unzip -y`
 
 2. Set the class path/ Environmental Variable:
 
@@ -82,11 +85,5 @@ Install Maven - Ubuntu
 ------------------------------------
     sudo apt install maven
 
-See: [Installing Apache Maven](https://maven.apache.org/install.html)
+For more information see: [Installing Apache Maven](https://maven.apache.org/install.html)
 
-Getting started
----------------
-See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
-
-## Create First Maven Project
-```code
