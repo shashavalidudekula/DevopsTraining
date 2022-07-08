@@ -139,4 +139,5 @@ Each of these build lifecycles is defined by a different list of build phases, w
 <tr><td><code>deploy</code></td><td>done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects</td></tr>
 </table>
 
+For a complete list of the lifecycle phases, refer to the [Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference)
 
