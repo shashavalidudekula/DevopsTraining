@@ -1,4 +1,4 @@
-# Directory Navigation
+## Directory Navigation
 
 `cd ..`	 To go up one level of the directory tree. (Change into the parent directory.)
 
@@ -299,6 +299,6 @@ make install </pre>
 
 `netstat -nutlp`	 Display listening tcp and udp ports and corresponding programs
 
-'ifconfig -a` It is used to configure the kernel-resident network interfaces. It is used at the boot time to set up the interfaces as necessary
+`ifconfig -a` It is used to configure the kernel-resident network interfaces. It is used at the boot time to set up the interfaces as necessary
 
 
