@@ -1,0 +1,92 @@
+Maven Cheat Sheet
+=================
+Some useful commands and snippets for [Apache Maven](https://maven.apache.org/)
+
+### Pre-rquisites:
+
+Java (jdk recommended) must be installed.
+
+Install Maven - Redhat
+------------------------------------
+
+### Download Maven:
+    
+1. Swtich to root user using 
+  
+        sudo su - 
+
+2. Change the path to /opt directory using
+  
+        cd /opt/
+
+3. Download maven using 
+
+        wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip
+
+    *  If you don't have `wget`. Install it using `yum install wget -y`
+                                                     
+    *  You can get the latest version of maven from [here](https://maven.apache.org/download.cgi)
+
+### Install & Configure Maven:
+                          
+1. Extract the zip file using 
+
+        unzip apache-maven-3.8.6-bin.zip
+     
+    *  if you don't have `unzip` installed already install it using `yum install unzip -y`
+
+2. Set the class path/ Environmental Variable:
+
+#### For specific user: 
+
+1. Open `bash_profile` which will be in users home dir using 
+
+        vi ~/.bash_profile
+
+2. Copy below lines to the bottom of the `bash_profile` and save the file using `:wq` 
+
+        export M2_HOME=/opt/apache-maven-3.8.6
+  
+        export PATH=$PATH:$M2_HOME/bin
+
+3. After making changes to `bash_profile` reload the file using 
+
+        source ~/.bash_profile 
+
+#### For All Users:
+
+1. Open `/etc/profile` which will be in `/etc/` using 
+
+        vi /etc/profile
+
+2. Copy below lines to the bottom of the `/etc/profile` file and save the file using `:wq` 
+
+        export M2_HOME=/opt/apache-maven-3.8.6
+  
+        export PATH=$PATH:$M2_HOME/bin
+
+3. After making changes to `/etc/profile` reload the file using 
+
+        source /etc/profile
+                                                     
+
+Run the following command to verify that Maven is installed successfully on your machine 
+
+        mvn --version
+
+Install Maven - CentOS
+------------------------------------
+    sudo yum install maven
+
+Install Maven - Ubuntu
+------------------------------------
+    sudo apt install maven
+
+See: [Installing Apache Maven](https://maven.apache.org/install.html)
+
+Getting started
+---------------
+See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
+
+## Create First Maven Project
+```code
