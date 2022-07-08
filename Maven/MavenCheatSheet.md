@@ -87,3 +87,24 @@ Install Maven - Ubuntu
 
 For more information see: [Installing Apache Maven](https://maven.apache.org/install.html)
 
+
+Standard Directory Structure of Maven
+---------------------------------------
+<pre>
+app-name
+|-- pom.xml
+`-- src
+    |-- main
+    |   `-- java
+    |       `-- com
+    |           `-- company
+    |               `-- App.java
+    `-- test
+        `-- java
+            `-- com
+                `-- company
+                    `-- AppTest.java
+</pre>
+
+See: [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+
