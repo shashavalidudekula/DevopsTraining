@@ -14,9 +14,11 @@ Jenkins integrating at various Devops Stages
 
   * Java must be installed 
 
-### Installing Jenkins in Redhat/CentOS/Fedora
+ <details> <summary> Installing Jenkins in Redhat/CentOS/Fedora </summary>
 
+<br><p>
 These commands will download the jenkins repo to yum repositories. and will download import a key.
+ 
 
     sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
     
@@ -30,9 +32,15 @@ Use this command to install `jenkins`
 
     yum install jenkins
 
-### Installing Jenkins in Ubuntu/Debian systems
+ </p>
+</details>
 
+<details> <summary> Installing Jenkins in Ubuntu/Debian systems </summary>
+ 
+<br><p>
+ 
  Run this command to copy the key to local
+ 
  
     curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
@@ -47,9 +55,16 @@ Use this command to install `jenkins`
  
     sudo apt-get update
     sudo apt-get install jenkins
+ 
+ </p>
+ </details>
+ 
 
-### Enable and Running Jenkins as service
-
+<details> <summary> Enable and Running Jenkins as service </summary>
+ 
+ 
+<br><p>
+ 
 `sudo systemcl enable jenkins`  to enable the server
     
 `sudo systemctl start jenkins`  to start the server
@@ -58,8 +73,67 @@ Use this command to install `jenkins`
     
 `sudo systemctl restart jenkins`  to restart the server
 
+</p>
+</details>
+
+
 ## Different types of jobs in jenkins
 
+### Freestyle Project :
 
-    
-    
+This job type is the default project type and is the most flexible to configure.
+
+### Maven Project :
+
+The Maven Project job type helps build Maven projects. However, Jenkins does not provide it as part of the core functionality. As such, it requires you to install the Maven Integration plugin.
+
+### Pipeline :
+
+A pipeline is a way of defining your entire build process using code in the form of a Jenkinsfile.
+
+example of a jenkins pipeline script
+
+Scripted-way: 
+
+    node {  
+      stage('Build') { 
+          // 
+      }
+      stage('Test') { 
+          // 
+      }
+      stage('Deploy') { 
+          // 
+      }
+    }
+
+Declarative-way: 
+
+    pipeline {
+        agent any 
+        stages {
+            stage('Build') { 
+                steps {
+                    // 
+                }
+            }
+            stage('Test') { 
+                steps {
+                    // 
+                }
+            }
+            stage('Deploy') { 
+                steps {
+                    // 
+                }
+            }
+        }
+    }
+
+### Multi-Branch Pipeline :
+
+A multi-branch pipeline is an extension of a Pipeline Job. However, it has a way of automatically creating Jenkins pipelines based on source control branches. Jenkins can then automatically discover new branches in the source control, and it can also automatically create a pipeline for that branch.
+
+Learn more on how to create a multi-branch pipeline [Here](https://www.jenkins.io/doc/book/pipeline/multibranch/)
+
+ 
