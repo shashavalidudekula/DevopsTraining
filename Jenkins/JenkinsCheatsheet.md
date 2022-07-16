@@ -79,7 +79,7 @@ A pipeline is a way of defining your entire build process using code in the form
 
 example of a jenkins pipeline script
 
-Scripted-way: 
+#### Scripted-way: 
 
     node {  
       stage('Build') { 
@@ -93,7 +93,7 @@ Scripted-way:
       }
     }
 
-Declarative-way: 
+#### Declarative-way: 
 
     pipeline {
         agent any 
