@@ -14,9 +14,9 @@ Jenkins integrating at various Devops Stages
 
   * Java must be installed 
 
- <details> <summary> Installing Jenkins in Redhat/CentOS/Fedora </summary>
+### Installing Jenkins in Redhat/CentOS/Fedora
 
-<br><p>
+
 These commands will download the jenkins repo to yum repositories. and will download import a key.
  
 
@@ -32,12 +32,7 @@ Use this command to install `jenkins`
 
     yum install jenkins
 
- </p>
-</details>
-
-<details> <summary> Installing Jenkins in Ubuntu/Debian systems </summary>
- 
-<br><p>
+### Installing Jenkins in Ubuntu/Debian systems
  
  Run this command to copy the key to local
  
@@ -56,14 +51,8 @@ Use this command to install `jenkins`
     sudo apt-get update
     sudo apt-get install jenkins
  
- </p>
- </details>
+### Enable and Running Jenkins as service 
  
-
-<details> <summary> Enable and Running Jenkins as service </summary>
- 
- 
-<br><p>
  
 `sudo systemcl enable jenkins`  to enable the server
     
@@ -72,9 +61,6 @@ Use this command to install `jenkins`
 `sudo systemctl stop jenkins`  to stop the server
     
 `sudo systemctl restart jenkins`  to restart the server
-
-</p>
-</details>
 
 
 ## Different types of jobs in jenkins
