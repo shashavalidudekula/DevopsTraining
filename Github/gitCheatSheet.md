@@ -83,40 +83,41 @@ Configuring user information used across all local repositories
  ## BRANCH & MERGE
  Isolating work in branches, changing context, and integrating changes
  
-`git branch` list your branches. a * will appear next to the currently active branch
 
-`git branch branch-name` create a new branch at the current commit
+| Command | Description |
+| ------- | ----------- |
+| `git branch` | List branches (the asterisk denotes the current branch) |
+| `git branch -a` | List all branches (local and remote) |
+| `git branch [branch name]` | Create a new branch |
+| `git branch -d [branch name]` | Delete a branch |
+| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git checkout -b [branch name]` | Create a new branch and switch to it |
+| `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
+| `git branch -m [old branch name] [new branch name]` | Rename a local branch |
+| `git checkout [branch name]` | Switch to a branch |
+| `git checkout -` | Switch to the branch last checked out |
+| `git checkout -- [file-name.txt]` | Discard changes to a file |
+| `git merge [branch name]` | Merge a branch into the active branch |
+| `git merge [source branch] [target branch]` | Merge a branch into a target branch |
+| `git stash` | Stash changes in a dirty working directory |
+| `git stash pop` | Apply the last stashed state on the working directory |
+| `git stash clear` | Remove all stashed entries |
 
-`git branch -b branch-name` Switch working directory to the specified branch. With `-b` Git will create the specified branch if it does not exist.
-
-`git checkout branch-name` switch to given _branch-name_ and check it out into your working directory
-
-`git branch -d branch-name` Remove selected branch, if it is already merged into any other. `-D` instead of `-d`forces deletion.
-
-`git merge branch-name` merge the specified branch’s history into the current one (the one you are on currently)
-
-`git log` show all commits in the current branch’s history
 
 ## INSPECT & COMPARE
 Examining logs, diffs and object information
 
-`git log` show the commit history for the currently active branch
-
-`git log -n count` List commit history of current branch. `-n count` limits list to last `n` commits 
-
-`git log --oneline` Lists commits with ids and mesages one per line
-
-`git log --oneline --graph --decorate` An overview with reference labels and history graph. One commit per line.
-
-`git log branchB..branchA` show the commits on branchA that are not on branchB
-
-`git log --follow file` show the commits that changed file, even across renames
-
-`git diff branchB...branchA` show the diff of what is in branchA that is not in branchB
-
-`git show SHA` show any object in Git in human-readable format. `[SHA]` is nothing but Unique commit id.
-
-`git reflog` List operations (e.g. checkouts or commits) made on local repository.
+| Command | Description |
+| ------- | ----------- |
+| `git log` | show the commit history for the currently active branch |
+| `git log -n count` | List commit history of current branch. `-n count` limits list to last `n` commits |
+| `git log --oneline` | Lists commits with ids and mesages one per line |
+| `git log --oneline --graph --decorate` | An overview with reference labels and history graph. One commit per line. |
+| `git log branchB..branchA` | show the commits on branchA that are not on branchB |
+| `git log --follow file` | show the commits that changed file, even across renames |
+| `git diff branchB...branchA` | show the diff of what is in branchA that is not in branchB |
+| `git show SHA` | show any object in Git in human-readable format. `[SHA]` is nothing but Unique commit id. |
+| `git reflog` | List operations (e.g. checkouts or commits) made on local repository. |
 
 ## SHARE & UPDATE
 Retrieving updates from another repository and updating local repos
