@@ -4,6 +4,9 @@
 #Date:  19th July,2022
 #Use: script for automating actions on jenkins jobs.
 
+#replace <jenkinsUsername> with your username
+#replace <jenkinsToken> with jenkins Token
+#replace <jenkinsUrl> with Jenkins Url
 
 echo "Select a Choice"
 echo "1 ==> List Jobs"
@@ -13,9 +16,9 @@ echo "4 ==> Disable Job"
 echo "5 ==> Enable Job"
 echo "6 ==> Reload Job"
 
-jenkinsUsername=shasha
-jenkinsToken=1111b0abe9836087e0319b2b9a2ac13617
-jenkinsUrl=http://3.108.236.3:8080/
+jenkinsUsername=<jenkinsUsername>
+jenkinsToken=<jenkinsToken>
+jenkinsUrl=<jenkinsUrl>
 
 echo "Enter your choice: "
 echo
