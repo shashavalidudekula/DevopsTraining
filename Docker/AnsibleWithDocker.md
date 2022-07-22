@@ -1,6 +1,6 @@
 ## Configuring Ansible Using Docker images
 
-### pre-requisites:
+### Pre-requisites:
 
   * Docker must be installed in your system
   
