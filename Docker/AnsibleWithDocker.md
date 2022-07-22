@@ -53,11 +53,11 @@
   
   * After entering into conatiners we need to update the apt repo using
 
-         apt update -y
+         yum update -y
          
   * Now install necessart packages using apt
 
-        apt install sudo openssh-server python3 iproute iputils-ping vim 
+        yum install sudo openssh-server python3 iproute iputils-ping vim 
         
   Note:  Install these packages in Server and Hosts containers.  
     
