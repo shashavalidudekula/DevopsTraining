@@ -6,14 +6,18 @@
   
 ### Step 1: creating the Ansible-master and Ansible-hosts
 
-  * Pull the Ubuntu Base OS Docker image using below command
+  * Pull the CentOS 7 Base OS Docker image using below command
 
-        docker pull ubuntu
+        docker pull centos/systemd
+        
+     Here I am using `centos/systemd` image because it will allow us to use the systemd in the container
         
   * Next run the docker image 
 
-        docker run -itd --hostname ansible --name ansible-master ubuntu /bin/bash
+        docker run -itd --hostname ansible --name ansible-master centos/systemd /usr/sbin/init
         
+    Here if you dont specify `/usr/sbin/init` you will be unable to perform `systemctl` command. 
+    
     Here `it` represents the docker image must run in interactive mode, `-d` represents it should be run in `dettached` mode.
     
     `--hostname ansible` will assign the name `ansible` to the created `container`
@@ -53,7 +57,7 @@
          
   * Now install necessart packages using apt
 
-        apt install sudo ssh python3 iproute2 iputils-ping vim 
+        apt install sudo openssh-server python3 iproute iputils-ping vim 
         
   Note:  Install these packages in Server and Hosts containers.  
     
