@@ -26,7 +26,7 @@
         
     the output should be like this
     
-    [!alt DockerContainer](
+    [!alt DockerContainer](https://github.com/shashavalidudekula/DevopsTraining/blob/main/Docker/Images/docker%20container.png)
     
     
     
