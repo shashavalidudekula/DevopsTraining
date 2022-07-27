@@ -14,7 +14,7 @@
         
   * Next run the docker image 
 
-        docker run -itd --hostname ansible --name ansible-master centos/systemd /usr/sbin/init
+        docker run -itd --privileged --hostname ansible --name ansible-master centos/systemd /usr/sbin/init
         
     Here if you dont specify `/usr/sbin/init` you will be unable to perform `systemctl` command. 
     
