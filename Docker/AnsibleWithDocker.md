@@ -14,11 +14,11 @@
         
   * Next run the docker image 
 
-        docker run -itd --privileged --hostname ansible --name ansible-master centos/systemd /usr/sbin/init
+        docker run -itd --privileged --hostname ansible --name ansible-master -p 80:80 centos/systemd /usr/sbin/init
         
     Here if you dont specify `/usr/sbin/init` you will be unable to perform `systemctl` command. 
     
-    Here `it` represents the docker image must run in interactive mode, `-d` represents it should be run in `dettached` mode.
+    Here `it` represents the docker image must run in interactive mode, `-d` represents it should be run in `dettached` mode and `-p 80:80` will map the port 80 of the host to port 80 of the ansible container.
     
     `--hostname ansible` will assign the name `ansible` to the created `container`
     
@@ -36,6 +36,7 @@
 
     ![alt AnsiblehostConatiners](https://github.com/shashavalidudekula/DevopsTraining/blob/main/Docker/Images/anssible-host-containers.png)
     
+    Map the different Host ports to containers.. example as we already mapped the `port 80` of host to `ansible master` container we can not map `port 80` of host to another container. so at the time of creating host containers map like this `-p 81:80` and `-p 82:80`. these will map the `port 81 and port 82` of the host to aniblehost1 and ansiblehost2. 
     
 ### Step 2: Installing Necessary packages in Master and Hosts
 
