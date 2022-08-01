@@ -52,13 +52,13 @@
         
         docker exec -itd ansible /bin/bash
   
-  * After entering into conatiners we need to update the apt repo using
+  * After entering into conatiners we need to update the yum repo using
 
          yum update -y
          
-  * Now install necessart packages using apt
+  * Now install necessary packages using yum
 
-        yum install sudo openssh-server python3 iproute iputils-ping vim 
+        yum install sudo openssh-server python3 iproute iputils-ping vim openssh-clients
         
   Note:  Install these packages in Server and Hosts containers.  
     
