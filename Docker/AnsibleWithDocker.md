@@ -46,11 +46,11 @@
 
     we can enter into containers in two ways
     
-        docker attach ansible
+        docker attach <ansible-master-conatiner-id- or-name>
          
         (OR)
         
-        docker exec -it ansible /bin/bash
+        docker exec -it <ansible-master-conatiner-id-or-name> /bin/bash
   
   * After entering into conatiners we need to update the yum repo using
 
