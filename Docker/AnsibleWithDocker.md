@@ -50,7 +50,7 @@
          
         (OR)
         
-        docker exec -itd ansible /bin/bash
+        docker exec -it ansible /bin/bash
   
   * After entering into conatiners we need to update the yum repo using
 
