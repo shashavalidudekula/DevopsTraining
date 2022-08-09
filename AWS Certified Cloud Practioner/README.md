@@ -144,3 +144,23 @@ The four most common types of cloud services(the 4 core)for Infrastructure as a 
 ### Types of Cloud Computing
    
 ![alt TypeofCloudComputing](https://github.com/shashavalidudekula/DevopsTraining/blob/main/AWS%20Certified%20Cloud%20Practioner/images/Types%20of%20Cloud%20Computing.png)
+
+### The Benefits Of Cloud
+
+The benefits of the cloud is a summary of reasons why an organization would consider adopting or migrating to utilizing public cloud.
+   * Agility
+      * Increase speed and agility
+   * Pay-as-you go pricing
+      * Trade capital expense for variable expense
+   * Economy of scale
+      * Benefit from massive economies of scale
+   * Global Reach
+      * Go global in minutes
+   * Security
+   * Reliability
+      * Stop spending money on running and maintaining data centers
+   * High Availability
+   * Scalability
+      *Benefit from massive economies of scale
+   * Elasticity
+
