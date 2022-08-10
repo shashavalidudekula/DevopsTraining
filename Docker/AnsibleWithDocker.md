@@ -8,13 +8,13 @@
 
   * Pull the CentOS 7 Base OS Docker image using below command
 
-        docker pull shashavalid/centos
+        docker pull centos/systemd
      
-     `shashavalid/centos` image has been created with `centos7` and enabled `systemd` by default.
+     `centos/systemd` has `systemd` enabled by default.
         
   * Next run the docker image 
 
-        docker run -itd --privileged --hostname ansible --name ansible-master -p 80:80 shashavalid/centos /usr/sbin/init
+        docker run -itd --privileged --hostname ansible --name ansible-master -p 80:80 centos/systemd /usr/sbin/init
         
     Here if you dont specify `/usr/sbin/init` you will be unable to perform `systemctl` command. 
     
@@ -58,7 +58,7 @@
          
   * Now install necessary packages using yum
 
-        yum install python3 iproute
+        yum install sudo openssh-server openssh-clients initscripts python3
         
   Note:  Install these packages in Server and Hosts containers.  
     
