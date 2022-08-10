@@ -14,11 +14,11 @@
         
   * Next run the docker image 
 
-        docker run -itd --privileged --hostname ansible --name ansible-master -p 80:80 centos/systemd /usr/sbin/init
+        docker run -d --privileged --hostname ansible --name ansible-master -p 80:80 centos/systemd
         
-    Here if you dont specify `/usr/sbin/init` you will be unable to perform `systemctl` command. 
+    To run `systemctl` `service` commands inside the container you must mention flag `--privileged` flag 
     
-    Here `it` represents the docker image must run in interactive mode, `-d` represents it should be run in `dettached` mode and `-p 80:80` will map the port 80 of the host to port 80 of the ansible container.
+    Here `-d` represents it should be run in `dettached` mode and `-p 80:80` will map the port 80 of the host to port 80 of the ansible container.
     
     `--hostname ansible` will assign the name `ansible` to the created `container`
     
